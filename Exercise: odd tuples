@@ -1,0 +1,16 @@
+def oddTuples(aTup):
+    '''
+    aTup: a tuple
+    
+    returns: tuple, every other element of aTup. 
+    '''
+    # Your Code Here
+    fTup = ()
+    for t in range(len(aTup)) :
+        if （t+1) % 2 == 1:
+    #演算子の優先順位に注意。括弧でくくる
+            fTup += (aTup[t],)
+            #一つしか要素を持たないタプルの記述には、最後にカンマ
+    print(fTup)
+a = (23, 23, 34, 44, 34)
+oddTuples(a)
