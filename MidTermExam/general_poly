@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jul  8 14:36:51 2018
+
+@author: HIROTO
+"""
+
+def general_poly (L):
+    """ L, a list of numbers (n0, n1, n2, ... nk)
+    Returns a function, which when applied to a value x, returns the value 
+    n0 * x^k + n1 * x^(k-1) + ... nk * x^0 """
+    #YOUR CODE HERE
+    ans = 0
+    for ind in range(len(L)) :
+        ans += L[ind]*(x**(len(L)-1-ind))
+    return ans
